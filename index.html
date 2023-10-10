@@ -1,0 +1,94 @@
+<html>
+  //bootstrap 5
+  <bod>
+     <div class="modal" id="home_modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <!-- <h4 class="modal-title text-white">Home Collection</h4> -->
+
+                            <span type="button" class="btn-close text-white" data-bs-dismiss="modal"></span>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+
+                            <form method="post" action="#" onsubmit="return homecollectValidate()" name="homecollect">
+                                <!-- Name input -->
+
+
+
+                                <div class="row">
+                                    <div class="form-outline pb-3 col-md-6">
+                                        <label class="form-label">Name</label>
+                                        <input type="name" name="name" class="form-control" />
+                                        <div class="error" id="nameErr"></div>
+                                    </div>
+                                    <!-- phone number input -->
+                                    <div class="form-outline pb-3 col-md-6">
+                                        <label class="form-label" for="phone">Phone</label>
+                                        <input type="text" id="text" name="phone" class="form-control" />
+                                        <div class="error" id="mobileErr"></div>
+                                    </div>
+                                    <!-- password input -->
+                                    <div class="form-outline pb-3 col-md-6">
+                                        <label class="form-label" for="age">Age</label>
+                                        <input type="text" id="age" name="age" class="form-control" />
+                                        <div class="error" id="ageErr"></div>
+                                    </div>
+                                    <!-- gender -->
+                                    <div class="form-outline pb-3 col-md-6">
+                                        <label class="form-label" for="gender">Gender</label>
+                                        <input type="text" id="gender" name="gender" class="form-control" />
+                                        <div class="error" id="genderErr"></div>
+                                    </div>
+
+                                    <!-- date -->
+                                    <div class="form-outline pb-3 col-md-6">
+                                        <label class="form-label" for="date">Date</label>
+                                        <input type="date" id="date" name="date" class="form-control" />
+                                        <div class="error" id="dateErr"></div>
+                                    </div>
+
+                                    <!-- Time  -->
+                                    <div class="form-outline pb-3 col-md-6">
+                                        <label class="form-label" for="time">Time</label>
+                                        <input type="time" name="time" class="form-control" />
+
+                                    </div>
+                                </div>
+                                <!-- test Name -->
+                                <div class="form-outline pb-3">
+                                    <label class="form-label">Details</label><br>
+                                    <textarea name="message" class="form-control"></textarea>
+                                    <!-- <input type="text" id="details" name="details" class="form-control" /> -->
+                                </div>
+                                <button type="submit" name="submit" class="btn bg-blue btn-lg float-end">Submit</button>
+                                <!-- Submit button -->
+                            </form>
+                        </div>
+
+                        <div class="modal-footer bg-blue">
+                            <h4 class="text-white text-center">Everyday: 8.00 AM to 8.00 PM</h4>
+                            <p></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      <script type="text/javascript">
+    //  setInterval(function() {
+    //      $("#home_modal").modal('show');
+    //  }, 2000);
+
+
+    setTimeout(function() {
+        $('#home_modal').modal('show');
+    }, 3000);
+    </script>
+  </bod>
+  
+</html>
